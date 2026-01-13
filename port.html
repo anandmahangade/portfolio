@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anand Mahangade | Cloud, DevOps & System Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#eef2f7;
+      --card:#ffffff;
+      --primary:#6d5dfc;
+      --secondary:#22d3ee;
+      --accent:#ec4899;
+      --text:#0f172a;
+      --muted:#64748b;
+      --gradient:linear-gradient(135deg,#6d5dfc,#22d3ee,#ec4899);
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);}
+    a{text-decoration:none;color:inherit;}
+
+    /* NAV */
+    header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.08);}    
+    .nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;}
+    .logo{font-weight:700;color:var(--primary);}    
+    .nav ul{display:flex;gap:18px;list-style:none;}
+    .nav a:hover{color:var(--primary);}    
+
+    /* HERO */
+    .hero{padding:90px 20px;text-align:center;background:radial-gradient(circle at top,#f5f3ff,#eef2f7);}    
+    .hero h1{font-size:3rem;margin-bottom:10px;}
+    .hero h1 span{background:var(--gradient);-webkit-background-clip:text;color:transparent;}
+    .hero h2{font-weight:600;margin-bottom:14px;}
+    .hero p{max-width:720px;margin:0 auto 26px;color:var(--muted);}    
+    .btn{display:inline-block;padding:12px 26px;border-radius:30px;font-weight:600;background:var(--gradient);color:#fff;margin:6px;transition:.3s;}    
+    .btn.outline{background:#fff;color:var(--primary);border:2px solid var(--primary);}    
+    .btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(109,93,252,.35);}    
+
+    section{max-width:1200px;margin:auto;padding:80px 20px;}    
+    .section-title{text-align:center;margin-bottom:50px;}    
+    .section-title h3{font-size:2.2rem;}    
+    .section-title span{display:inline-block;height:4px;width:60px;background:var(--gradient);margin-top:10px;border-radius:4px;}    
+
+    /* ABOUT */
+    .about{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:center;}    
+    .avatar{width:220px;height:220px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;color:#fff;font-size:4rem;margin:auto;}    
+    .info p{color:var(--muted);margin:14px 0;}    
+    .info ul{list-style:none;margin-top:14px;}    
+    .info li{margin-bottom:6px;}    
+
+    /* CARDS */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;}    
+    .card{background:var(--card);border-radius:18px;padding:26px;box-shadow:0 15px 40px rgba(0,0,0,.08);transition:.3s;position:relative;}    
+    .card::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--gradient);border-radius:18px 18px 0 0;}    
+    .card:hover{transform:translateY(-8px);}    
+    .card h4{margin-bottom:10px;}    
+    .tags span{display:inline-block;font-size:.8rem;background:#f1f5f9;padding:4px 10px;border-radius:20px;margin:4px;}    
+
+    /* PROJECTS */
+    .project-img{height:140px;border-radius:12px;background:var(--gradient);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.4rem;margin-bottom:14px;}    
+
+    /* FOOTER */
+    footer{background:#020617;color:#cbd5f5;text-align:center;padding:30px 20px;}    
+
+    @media(max-width:900px){.about{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">My Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <h1>Hi, I'm <span>Anand Mahangade</span></h1>
+  <h2>Cloud & DevOps Engineer</h2>
+  <p>AWS & DevOps Engineer with hands-on experience in cloud infrastructure, CI/CD pipelines, containerization, automation, networking, and Linux system administration.</p>
+  <a href="#projects" class="btn">View My Work</a>
+  <a href="#contact" class="btn outline">Get In Touch</a>
+</section>
+
+<section id="about">
+  <div class="section-title"><h3>About Me</h3><span></span></div>
+  <div class="about">
+    <div class="avatar">AM</div>
+    <div class="info">
+      <h4>Cloud • DevOps • Network • Linux Engineer</h4>
+      <p>Results‑driven engineer skilled in AWS, CI/CD automation, Terraform, Docker, Linux administration, and cloud networking. Passionate about building scalable, secure, and highly available systems.</p>
+      <ul>
+        <li><b>Email:</b> anandmahangade43@gmail.com</li>
+        <li><b>Phone:</b> +91‑9146893702</li>
+        <li><b>Location:</b> Pune, India</li>
+      </ul>
+      <a href="resume.pdf" class="btn">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-title"><h3>Technical Skills</h3><span></span></div>
+  <div class="grid">
+    <div class="card"><h4>Cloud & DevOps</h4><p>AWS infrastructure, automation & best practices.</p><div class="tags"><span>AWS</span><span>EC2</span><span>S3</span><span>VPC</span><span>Terraform</span></div></div>
+    <div class="card"><h4>CI/CD & Tools</h4><p>Automated pipelines and configuration management.</p><div class="tags"><span>Jenkins</span><span>GitHub</span><span>Ansible</span></div></div>
+    <div class="card"><h4>Containerization</h4><p>Modern application deployment using containers.</p><div class="tags"><span>Docker</span><span>Kubernetes</span></div></div>
+    <div class="card"><h4>Networking & Linux</h4><p>System administration and cloud networking.</p><div class="tags"><span>Linux</span><span>TCP/IP</span><span>Shell</span></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-title"><h3>My Projects</h3><span></span></div>
+  <div class="grid">
+    <div class="card"><div class="project-img">🏥</div><h4>Doctor Appointment System</h4><p>Full‑stack healthcare application.</p><a class="btn outline" href="#">View Code</a></div>
+    <div class="card"><div class="project-img">☁️</div><h4>AWS Infrastructure Automation</h4><p>Terraform‑based cloud provisioning.</p><a class="btn outline" href="#">View Code</a></div>
+    <div class="card"><div class="project-img">🚀</div><h4>CI/CD Pipeline</h4><p>Jenkins + GitHub + AWS EC2.</p><a class="btn outline" href="#">View Code</a></div>
+    <div class="card"><div class="project-img">📊</div><h4>Monitoring & Alerts</h4><p>CloudWatch + SNS monitoring.</p><a class="btn outline" href="#">View Code</a></div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="section-title"><h3>Certifications</h3><span></span></div>
+  <div class="grid">
+    <div class="card"><h4>AWS Certification</h4><p>EC2, S3, VPC, IAM</p><a href="certificates/aws.pdf" target="_blank" class="btn">View Certificate</a></div>
+    <div class="card"><h4>Linux Certification</h4><p>System Administration</p><a href="certificates/linux.pdf" target="_blank" class="btn">View Certificate</a></div>
+    <div class="card"><h4>Python Certification</h4><p>Automation & Scripting</p><a href="certificates/python.pdf" target="_blank" class="btn">View Certificate</a></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title"><h3>Get In Touch</h3><span></span></div>
+  <div class="grid">
+    <div class="card"><h4>Contact Info</h4><p>Email: anandmahangade43@gmail.com<br>Phone: +91‑9146893702<br>Pune, India</p></div>
+    <div class="card"><h4>Send Message</h4><form><input placeholder="Your Name" style="width:100%;padding:10px;margin:8px 0"><input placeholder="Your Email" style="width:100%;padding:10px;margin:8px 0"><textarea placeholder="Message" style="width:100%;padding:10px;margin:8px 0"></textarea><button class="btn" type="submit">Send</button></form></div>
+  </div>
+</section>
+
+<footer>© 2025 Anand Mahangade | Cloud • DevOps • Network • Linux Engineer</footer>
+
+</body>
+</html>
